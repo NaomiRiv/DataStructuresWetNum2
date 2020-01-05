@@ -1,0 +1,1 @@
+enum OS { linuxOS, windowsOS };
