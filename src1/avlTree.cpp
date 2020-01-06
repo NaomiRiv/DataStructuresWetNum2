@@ -9,6 +9,13 @@
 #include "list.cpp"
 #include "treeExceptions.cpp"
 
+/**
+ * how to merge two trees:
+ * 1. get the lists from both trees (one for the keys and one for the data): o(n) GetDataList() and  GetDataList()
+ * 2. merge both lists by key (four lists - all organized by the corresponding keys list) order: o(n)
+ * 3. use FromSortedList function, with the key list and the data list and you'll get an avl tree that contains the wanted keys and wanted data in its nodes
+ * */
+
 template<typename Key, typename Data = void, typename Compare = std::less<Key> >
 class AVLTree{
 private:
