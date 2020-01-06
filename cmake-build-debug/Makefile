@@ -177,6 +177,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src1/avlTree.o: src1/avlTree.cpp.o
+
+.PHONY : src1/avlTree.o
+
+# target to build an object file
+src1/avlTree.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.o
+.PHONY : src1/avlTree.cpp.o
+
+src1/avlTree.i: src1/avlTree.cpp.i
+
+.PHONY : src1/avlTree.i
+
+# target to preprocess a source file
+src1/avlTree.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.i
+.PHONY : src1/avlTree.cpp.i
+
+src1/avlTree.s: src1/avlTree.cpp.s
+
+.PHONY : src1/avlTree.s
+
+# target to generate assembly for a file
+src1/avlTree.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.s
+.PHONY : src1/avlTree.cpp.s
+
+src1/node.o: src1/node.cpp.o
+
+.PHONY : src1/node.o
+
+# target to build an object file
+src1/node.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.o
+.PHONY : src1/node.cpp.o
+
+src1/node.i: src1/node.cpp.i
+
+.PHONY : src1/node.i
+
+# target to preprocess a source file
+src1/node.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.i
+.PHONY : src1/node.cpp.i
+
+src1/node.s: src1/node.cpp.s
+
+.PHONY : src1/node.s
+
+# target to generate assembly for a file
+src1/node.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.s
+.PHONY : src1/node.cpp.s
+
 unionFind.o: unionFind.cpp.o
 
 .PHONY : unionFind.o
@@ -219,6 +273,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src1/avlTree.o"
+	@echo "... src1/avlTree.i"
+	@echo "... src1/avlTree.s"
+	@echo "... src1/node.o"
+	@echo "... src1/node.i"
+	@echo "... src1/node.s"
 	@echo "... unionFind.o"
 	@echo "... unionFind.i"
 	@echo "... unionFind.s"
