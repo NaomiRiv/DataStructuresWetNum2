@@ -9,12 +9,12 @@ CMakeFiles/DS2.dir/hash.cpp.o
  /home/nomi/DS2/src1/treeExceptions.cpp
 CMakeFiles/DS2.dir/main.cpp.o
  /home/nomi/DS2/main.cpp
-CMakeFiles/DS2.dir/src1/avlTree.cpp.o
- /home/nomi/DS2/src1/avlTree.cpp
+CMakeFiles/DS2.dir/rankAvlTree.cpp.o
+ /home/nomi/DS2/rankAvlTree.cpp
+ /home/nomi/DS2/rankNode.cpp
  /home/nomi/DS2/src1/list.cpp
- /home/nomi/DS2/src1/node.cpp
  /home/nomi/DS2/src1/treeExceptions.cpp
-CMakeFiles/DS2.dir/src1/node.cpp.o
- /home/nomi/DS2/src1/node.cpp
+CMakeFiles/DS2.dir/rankNode.cpp.o
+ /home/nomi/DS2/rankNode.cpp
 CMakeFiles/DS2.dir/unionFind.cpp.o
  /home/nomi/DS2/unionFind.cpp

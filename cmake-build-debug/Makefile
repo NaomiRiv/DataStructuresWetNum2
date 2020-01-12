@@ -177,59 +177,59 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src1/avlTree.o: src1/avlTree.cpp.o
+rankAvlTree.o: rankAvlTree.cpp.o
 
-.PHONY : src1/avlTree.o
-
-# target to build an object file
-src1/avlTree.cpp.o:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.o
-.PHONY : src1/avlTree.cpp.o
-
-src1/avlTree.i: src1/avlTree.cpp.i
-
-.PHONY : src1/avlTree.i
-
-# target to preprocess a source file
-src1/avlTree.cpp.i:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.i
-.PHONY : src1/avlTree.cpp.i
-
-src1/avlTree.s: src1/avlTree.cpp.s
-
-.PHONY : src1/avlTree.s
-
-# target to generate assembly for a file
-src1/avlTree.cpp.s:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.s
-.PHONY : src1/avlTree.cpp.s
-
-src1/node.o: src1/node.cpp.o
-
-.PHONY : src1/node.o
+.PHONY : rankAvlTree.o
 
 # target to build an object file
-src1/node.cpp.o:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.o
-.PHONY : src1/node.cpp.o
+rankAvlTree.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankAvlTree.cpp.o
+.PHONY : rankAvlTree.cpp.o
 
-src1/node.i: src1/node.cpp.i
+rankAvlTree.i: rankAvlTree.cpp.i
 
-.PHONY : src1/node.i
+.PHONY : rankAvlTree.i
 
 # target to preprocess a source file
-src1/node.cpp.i:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.i
-.PHONY : src1/node.cpp.i
+rankAvlTree.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankAvlTree.cpp.i
+.PHONY : rankAvlTree.cpp.i
 
-src1/node.s: src1/node.cpp.s
+rankAvlTree.s: rankAvlTree.cpp.s
 
-.PHONY : src1/node.s
+.PHONY : rankAvlTree.s
 
 # target to generate assembly for a file
-src1/node.cpp.s:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.s
-.PHONY : src1/node.cpp.s
+rankAvlTree.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankAvlTree.cpp.s
+.PHONY : rankAvlTree.cpp.s
+
+rankNode.o: rankNode.cpp.o
+
+.PHONY : rankNode.o
+
+# target to build an object file
+rankNode.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankNode.cpp.o
+.PHONY : rankNode.cpp.o
+
+rankNode.i: rankNode.cpp.i
+
+.PHONY : rankNode.i
+
+# target to preprocess a source file
+rankNode.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankNode.cpp.i
+.PHONY : rankNode.cpp.i
+
+rankNode.s: rankNode.cpp.s
+
+.PHONY : rankNode.s
+
+# target to generate assembly for a file
+rankNode.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankNode.cpp.s
+.PHONY : rankNode.cpp.s
 
 unionFind.o: unionFind.cpp.o
 
@@ -273,12 +273,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src1/avlTree.o"
-	@echo "... src1/avlTree.i"
-	@echo "... src1/avlTree.s"
-	@echo "... src1/node.o"
-	@echo "... src1/node.i"
-	@echo "... src1/node.s"
+	@echo "... rankAvlTree.o"
+	@echo "... rankAvlTree.i"
+	@echo "... rankAvlTree.s"
+	@echo "... rankNode.o"
+	@echo "... rankNode.i"
+	@echo "... rankNode.s"
 	@echo "... unionFind.o"
 	@echo "... unionFind.i"
 	@echo "... unionFind.s"

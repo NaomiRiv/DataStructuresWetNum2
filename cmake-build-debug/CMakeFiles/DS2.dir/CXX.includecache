@@ -6,34 +6,28 @@
 
 #IncludeRegexTransform: 
 
-/home/nomi/DS2/hash.cpp
-iostream
--
-src1/avlTree.cpp
-/home/nomi/DS2/src1/avlTree.cpp
-
-/home/nomi/DS2/src1/avlTree.cpp
+/home/nomi/DS2/rankAvlTree.cpp
 iostream
 -
 functional
 -
 cmath
 -
-node.cpp
-/home/nomi/DS2/src1/node.cpp
-list.cpp
+rankNode.cpp
+/home/nomi/DS2/rankNode.cpp
+src1/list.cpp
 /home/nomi/DS2/src1/list.cpp
-treeExceptions.cpp
+src1/treeExceptions.cpp
 /home/nomi/DS2/src1/treeExceptions.cpp
 
-/home/nomi/DS2/src1/list.cpp
-iostream
--
-
-/home/nomi/DS2/src1/node.cpp
+/home/nomi/DS2/rankNode.cpp
 cmath
 -
 algorithm
+-
+
+/home/nomi/DS2/src1/list.cpp
+iostream
 -
 
 /home/nomi/DS2/src1/treeExceptions.cpp

@@ -47,6 +47,15 @@ private:
         std::cout << *(node->data) << " BF: " << node->bf << " Height: " << node->height << std::endl;
         printInorderAux(node->right);
     }
+    RankNode<Key, Data>* Select(int k, RankNode<Key, Data>* node) {
+        if (node->left->r = k-1) {
+            return node;
+        } else if (node->left->r > k-1) {
+            return Select(k, node->left);
+        } else {
+            return Select(k - node->left->r -1, node->right);
+        }
+    }
 public:
     bool IsEmpty();
     int GetSize();
@@ -307,7 +316,6 @@ template<typename Key, typename Data, typename Compare>
 RankNode<Key, Data>* AVLTree<Key, Data, Compare>::AddToTreeAux(RankNode<Key, Data>* nodeToAdd, RankNode<Key, Data>* currentNode, Compare cmp) {
 	bool lt = cmp(*nodeToAdd->key, *currentNode->key);
 	bool gt = cmp(*currentNode->key, *nodeToAdd->key);
-
 	if ((lt && !currentNode->left) || (gt && !currentNode->right)) {
 		if (lt) {
             currentNode->left = nodeToAdd;

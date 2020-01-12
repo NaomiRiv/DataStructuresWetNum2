@@ -96,39 +96,39 @@ CMakeFiles/DS2.dir/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/hash.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/hash.cpp -o CMakeFiles/DS2.dir/hash.cpp.s
 
-CMakeFiles/DS2.dir/src1/avlTree.cpp.o: CMakeFiles/DS2.dir/flags.make
-CMakeFiles/DS2.dir/src1/avlTree.cpp.o: ../src1/avlTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DS2.dir/src1/avlTree.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/src1/avlTree.cpp.o -c /home/nomi/DS2/src1/avlTree.cpp
+CMakeFiles/DS2.dir/rankAvlTree.cpp.o: CMakeFiles/DS2.dir/flags.make
+CMakeFiles/DS2.dir/rankAvlTree.cpp.o: ../rankAvlTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DS2.dir/rankAvlTree.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/rankAvlTree.cpp.o -c /home/nomi/DS2/rankAvlTree.cpp
 
-CMakeFiles/DS2.dir/src1/avlTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/src1/avlTree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/src1/avlTree.cpp > CMakeFiles/DS2.dir/src1/avlTree.cpp.i
+CMakeFiles/DS2.dir/rankAvlTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/rankAvlTree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/rankAvlTree.cpp > CMakeFiles/DS2.dir/rankAvlTree.cpp.i
 
-CMakeFiles/DS2.dir/src1/avlTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/src1/avlTree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/src1/avlTree.cpp -o CMakeFiles/DS2.dir/src1/avlTree.cpp.s
+CMakeFiles/DS2.dir/rankAvlTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/rankAvlTree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/rankAvlTree.cpp -o CMakeFiles/DS2.dir/rankAvlTree.cpp.s
 
-CMakeFiles/DS2.dir/src1/node.cpp.o: CMakeFiles/DS2.dir/flags.make
-CMakeFiles/DS2.dir/src1/node.cpp.o: ../src1/node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DS2.dir/src1/node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/src1/node.cpp.o -c /home/nomi/DS2/src1/node.cpp
+CMakeFiles/DS2.dir/rankNode.cpp.o: CMakeFiles/DS2.dir/flags.make
+CMakeFiles/DS2.dir/rankNode.cpp.o: ../rankNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DS2.dir/rankNode.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/rankNode.cpp.o -c /home/nomi/DS2/rankNode.cpp
 
-CMakeFiles/DS2.dir/src1/node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/src1/node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/src1/node.cpp > CMakeFiles/DS2.dir/src1/node.cpp.i
+CMakeFiles/DS2.dir/rankNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/rankNode.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/rankNode.cpp > CMakeFiles/DS2.dir/rankNode.cpp.i
 
-CMakeFiles/DS2.dir/src1/node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/src1/node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/src1/node.cpp -o CMakeFiles/DS2.dir/src1/node.cpp.s
+CMakeFiles/DS2.dir/rankNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/rankNode.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/rankNode.cpp -o CMakeFiles/DS2.dir/rankNode.cpp.s
 
 # Object files for target DS2
 DS2_OBJECTS = \
 "CMakeFiles/DS2.dir/main.cpp.o" \
 "CMakeFiles/DS2.dir/unionFind.cpp.o" \
 "CMakeFiles/DS2.dir/hash.cpp.o" \
-"CMakeFiles/DS2.dir/src1/avlTree.cpp.o" \
-"CMakeFiles/DS2.dir/src1/node.cpp.o"
+"CMakeFiles/DS2.dir/rankAvlTree.cpp.o" \
+"CMakeFiles/DS2.dir/rankNode.cpp.o"
 
 # External object files for target DS2
 DS2_EXTERNAL_OBJECTS =
@@ -136,8 +136,8 @@ DS2_EXTERNAL_OBJECTS =
 DS2: CMakeFiles/DS2.dir/main.cpp.o
 DS2: CMakeFiles/DS2.dir/unionFind.cpp.o
 DS2: CMakeFiles/DS2.dir/hash.cpp.o
-DS2: CMakeFiles/DS2.dir/src1/avlTree.cpp.o
-DS2: CMakeFiles/DS2.dir/src1/node.cpp.o
+DS2: CMakeFiles/DS2.dir/rankAvlTree.cpp.o
+DS2: CMakeFiles/DS2.dir/rankNode.cpp.o
 DS2: CMakeFiles/DS2.dir/build.make
 DS2: CMakeFiles/DS2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DS2"
