@@ -284,6 +284,8 @@ void AVLTree<Key, Data, Compare>::RemoveKeyFromTreeAux(RankNode<Key, Data>* node
             treeRoot = nullptr;
         }
 		Balance(parentNode, false);
+        parentNode->UpdateR();
+        parentNode->UpdateSum();
 		delete node;
 	} else {
 		if (!node->left || !node->right) {
@@ -297,6 +299,8 @@ void AVLTree<Key, Data, Compare>::RemoveKeyFromTreeAux(RankNode<Key, Data>* node
                 parentNode->right = replacementNode;
             }
 			Balance(parentNode, false);
+            parentNode->UpdateR();
+            parentNode->UpdateSum();
 			delete node;
 			if (parentNode == nullptr) {
                 treeRoot = replacementNode;
@@ -316,6 +320,7 @@ template<typename Key, typename Data, typename Compare>
 RankNode<Key, Data>* AVLTree<Key, Data, Compare>::AddToTreeAux(RankNode<Key, Data>* nodeToAdd, RankNode<Key, Data>* currentNode, Compare cmp) {
 	bool lt = cmp(*nodeToAdd->key, *currentNode->key);
 	bool gt = cmp(*currentNode->key, *nodeToAdd->key);
+	// found the place to add
 	if ((lt && !currentNode->left) || (gt && !currentNode->right)) {
 		if (lt) {
             currentNode->left = nodeToAdd;
@@ -325,9 +330,15 @@ RankNode<Key, Data>* AVLTree<Key, Data, Compare>::AddToTreeAux(RankNode<Key, Dat
         }
 		nodeToAdd->parent = currentNode;
 		treeSize++;
+		currentNode->UpdateR();
+		currentNode->UpdateSum();
 		return nodeToAdd;
 	}
-	return AddToTreeAux(nodeToAdd, lt ? currentNode->left : currentNode->right);
+	// -----------------------
+	RankNode<Key, Data>* toReturn = AddToTreeAux(nodeToAdd, lt ? currentNode->left : currentNode->right);
+	currentNode->UpdateR();
+	currentNode->UpdateSum();
+	return toReturn;
 }
 
 template<typename Key, typename Data, typename Compare>
@@ -428,6 +439,8 @@ void AVLTree<Key, Data, Compare>::AddToTree(Key const &keyToAdd, Data *data) {
 	if (!treeRoot) {
 		treeRoot = newNode;
 		treeSize++;
+		treeRoot->UpdateR();
+		treeRoot->UpdateSum();
 		return;
 	}
 	newNode = AddToTreeAux(newNode, treeRoot);
