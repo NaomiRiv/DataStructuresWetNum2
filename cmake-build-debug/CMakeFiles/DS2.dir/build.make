@@ -96,67 +96,11 @@ CMakeFiles/DS2.dir/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/hash.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/hash.cpp -o CMakeFiles/DS2.dir/hash.cpp.s
 
-CMakeFiles/DS2.dir/src1/list.cpp.o: CMakeFiles/DS2.dir/flags.make
-CMakeFiles/DS2.dir/src1/list.cpp.o: ../src1/list.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DS2.dir/src1/list.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/src1/list.cpp.o -c /home/nomi/DS2/src1/list.cpp
-
-CMakeFiles/DS2.dir/src1/list.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/src1/list.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/src1/list.cpp > CMakeFiles/DS2.dir/src1/list.cpp.i
-
-CMakeFiles/DS2.dir/src1/list.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/src1/list.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/src1/list.cpp -o CMakeFiles/DS2.dir/src1/list.cpp.s
-
-CMakeFiles/DS2.dir/src1/avlTree.cpp.o: CMakeFiles/DS2.dir/flags.make
-CMakeFiles/DS2.dir/src1/avlTree.cpp.o: ../src1/avlTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DS2.dir/src1/avlTree.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/src1/avlTree.cpp.o -c /home/nomi/DS2/src1/avlTree.cpp
-
-CMakeFiles/DS2.dir/src1/avlTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/src1/avlTree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/src1/avlTree.cpp > CMakeFiles/DS2.dir/src1/avlTree.cpp.i
-
-CMakeFiles/DS2.dir/src1/avlTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/src1/avlTree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/src1/avlTree.cpp -o CMakeFiles/DS2.dir/src1/avlTree.cpp.s
-
-CMakeFiles/DS2.dir/src1/node.cpp.o: CMakeFiles/DS2.dir/flags.make
-CMakeFiles/DS2.dir/src1/node.cpp.o: ../src1/node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DS2.dir/src1/node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/src1/node.cpp.o -c /home/nomi/DS2/src1/node.cpp
-
-CMakeFiles/DS2.dir/src1/node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/src1/node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/src1/node.cpp > CMakeFiles/DS2.dir/src1/node.cpp.i
-
-CMakeFiles/DS2.dir/src1/node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/src1/node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/src1/node.cpp -o CMakeFiles/DS2.dir/src1/node.cpp.s
-
-CMakeFiles/DS2.dir/src1/treeExceptions.cpp.o: CMakeFiles/DS2.dir/flags.make
-CMakeFiles/DS2.dir/src1/treeExceptions.cpp.o: ../src1/treeExceptions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DS2.dir/src1/treeExceptions.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/src1/treeExceptions.cpp.o -c /home/nomi/DS2/src1/treeExceptions.cpp
-
-CMakeFiles/DS2.dir/src1/treeExceptions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/src1/treeExceptions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/src1/treeExceptions.cpp > CMakeFiles/DS2.dir/src1/treeExceptions.cpp.i
-
-CMakeFiles/DS2.dir/src1/treeExceptions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/src1/treeExceptions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/src1/treeExceptions.cpp -o CMakeFiles/DS2.dir/src1/treeExceptions.cpp.s
-
 # Object files for target DS2
 DS2_OBJECTS = \
 "CMakeFiles/DS2.dir/main.cpp.o" \
 "CMakeFiles/DS2.dir/unionFind.cpp.o" \
-"CMakeFiles/DS2.dir/hash.cpp.o" \
-"CMakeFiles/DS2.dir/src1/list.cpp.o" \
-"CMakeFiles/DS2.dir/src1/avlTree.cpp.o" \
-"CMakeFiles/DS2.dir/src1/node.cpp.o" \
-"CMakeFiles/DS2.dir/src1/treeExceptions.cpp.o"
+"CMakeFiles/DS2.dir/hash.cpp.o"
 
 # External object files for target DS2
 DS2_EXTERNAL_OBJECTS =
@@ -164,13 +108,9 @@ DS2_EXTERNAL_OBJECTS =
 DS2: CMakeFiles/DS2.dir/main.cpp.o
 DS2: CMakeFiles/DS2.dir/unionFind.cpp.o
 DS2: CMakeFiles/DS2.dir/hash.cpp.o
-DS2: CMakeFiles/DS2.dir/src1/list.cpp.o
-DS2: CMakeFiles/DS2.dir/src1/avlTree.cpp.o
-DS2: CMakeFiles/DS2.dir/src1/node.cpp.o
-DS2: CMakeFiles/DS2.dir/src1/treeExceptions.cpp.o
 DS2: CMakeFiles/DS2.dir/build.make
 DS2: CMakeFiles/DS2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable DS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DS2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DS2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
