@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DS2.dir/hash.cpp.o"
   "CMakeFiles/DS2.dir/main.cpp.o"
-  "CMakeFiles/DS2.dir/rankAvlTree.cpp.o"
-  "CMakeFiles/DS2.dir/rankNode.cpp.o"
+  "CMakeFiles/DS2.dir/src1/avlTree.cpp.o"
+  "CMakeFiles/DS2.dir/src1/list.cpp.o"
+  "CMakeFiles/DS2.dir/src1/node.cpp.o"
+  "CMakeFiles/DS2.dir/src1/treeExceptions.cpp.o"
   "CMakeFiles/DS2.dir/unionFind.cpp.o"
   "DS2"
   "DS2.pdb"

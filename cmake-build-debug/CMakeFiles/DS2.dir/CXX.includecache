@@ -6,31 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/nomi/DS2/rankAvlTree.cpp
-iostream
--
-functional
--
-cmath
--
-rankNode.cpp
-/home/nomi/DS2/rankNode.cpp
-src1/list.cpp
-/home/nomi/DS2/src1/list.cpp
-src1/treeExceptions.cpp
-/home/nomi/DS2/src1/treeExceptions.cpp
-
-/home/nomi/DS2/rankNode.cpp
-cmath
--
-algorithm
--
-
-/home/nomi/DS2/src1/list.cpp
-iostream
--
-
-/home/nomi/DS2/src1/treeExceptions.cpp
-iostream
--
-

@@ -177,59 +177,113 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-rankAvlTree.o: rankAvlTree.cpp.o
+src1/avlTree.o: src1/avlTree.cpp.o
 
-.PHONY : rankAvlTree.o
-
-# target to build an object file
-rankAvlTree.cpp.o:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankAvlTree.cpp.o
-.PHONY : rankAvlTree.cpp.o
-
-rankAvlTree.i: rankAvlTree.cpp.i
-
-.PHONY : rankAvlTree.i
-
-# target to preprocess a source file
-rankAvlTree.cpp.i:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankAvlTree.cpp.i
-.PHONY : rankAvlTree.cpp.i
-
-rankAvlTree.s: rankAvlTree.cpp.s
-
-.PHONY : rankAvlTree.s
-
-# target to generate assembly for a file
-rankAvlTree.cpp.s:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankAvlTree.cpp.s
-.PHONY : rankAvlTree.cpp.s
-
-rankNode.o: rankNode.cpp.o
-
-.PHONY : rankNode.o
+.PHONY : src1/avlTree.o
 
 # target to build an object file
-rankNode.cpp.o:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankNode.cpp.o
-.PHONY : rankNode.cpp.o
+src1/avlTree.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.o
+.PHONY : src1/avlTree.cpp.o
 
-rankNode.i: rankNode.cpp.i
+src1/avlTree.i: src1/avlTree.cpp.i
 
-.PHONY : rankNode.i
+.PHONY : src1/avlTree.i
 
 # target to preprocess a source file
-rankNode.cpp.i:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankNode.cpp.i
-.PHONY : rankNode.cpp.i
+src1/avlTree.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.i
+.PHONY : src1/avlTree.cpp.i
 
-rankNode.s: rankNode.cpp.s
+src1/avlTree.s: src1/avlTree.cpp.s
 
-.PHONY : rankNode.s
+.PHONY : src1/avlTree.s
 
 # target to generate assembly for a file
-rankNode.cpp.s:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/rankNode.cpp.s
-.PHONY : rankNode.cpp.s
+src1/avlTree.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/avlTree.cpp.s
+.PHONY : src1/avlTree.cpp.s
+
+src1/list.o: src1/list.cpp.o
+
+.PHONY : src1/list.o
+
+# target to build an object file
+src1/list.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/list.cpp.o
+.PHONY : src1/list.cpp.o
+
+src1/list.i: src1/list.cpp.i
+
+.PHONY : src1/list.i
+
+# target to preprocess a source file
+src1/list.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/list.cpp.i
+.PHONY : src1/list.cpp.i
+
+src1/list.s: src1/list.cpp.s
+
+.PHONY : src1/list.s
+
+# target to generate assembly for a file
+src1/list.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/list.cpp.s
+.PHONY : src1/list.cpp.s
+
+src1/node.o: src1/node.cpp.o
+
+.PHONY : src1/node.o
+
+# target to build an object file
+src1/node.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.o
+.PHONY : src1/node.cpp.o
+
+src1/node.i: src1/node.cpp.i
+
+.PHONY : src1/node.i
+
+# target to preprocess a source file
+src1/node.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.i
+.PHONY : src1/node.cpp.i
+
+src1/node.s: src1/node.cpp.s
+
+.PHONY : src1/node.s
+
+# target to generate assembly for a file
+src1/node.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/node.cpp.s
+.PHONY : src1/node.cpp.s
+
+src1/treeExceptions.o: src1/treeExceptions.cpp.o
+
+.PHONY : src1/treeExceptions.o
+
+# target to build an object file
+src1/treeExceptions.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/treeExceptions.cpp.o
+.PHONY : src1/treeExceptions.cpp.o
+
+src1/treeExceptions.i: src1/treeExceptions.cpp.i
+
+.PHONY : src1/treeExceptions.i
+
+# target to preprocess a source file
+src1/treeExceptions.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/treeExceptions.cpp.i
+.PHONY : src1/treeExceptions.cpp.i
+
+src1/treeExceptions.s: src1/treeExceptions.cpp.s
+
+.PHONY : src1/treeExceptions.s
+
+# target to generate assembly for a file
+src1/treeExceptions.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/src1/treeExceptions.cpp.s
+.PHONY : src1/treeExceptions.cpp.s
 
 unionFind.o: unionFind.cpp.o
 
@@ -273,12 +327,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... rankAvlTree.o"
-	@echo "... rankAvlTree.i"
-	@echo "... rankAvlTree.s"
-	@echo "... rankNode.o"
-	@echo "... rankNode.i"
-	@echo "... rankNode.s"
+	@echo "... src1/avlTree.o"
+	@echo "... src1/avlTree.i"
+	@echo "... src1/avlTree.s"
+	@echo "... src1/list.o"
+	@echo "... src1/list.i"
+	@echo "... src1/list.s"
+	@echo "... src1/node.o"
+	@echo "... src1/node.i"
+	@echo "... src1/node.s"
+	@echo "... src1/treeExceptions.o"
+	@echo "... src1/treeExceptions.i"
+	@echo "... src1/treeExceptions.s"
 	@echo "... unionFind.o"
 	@echo "... unionFind.i"
 	@echo "... unionFind.s"

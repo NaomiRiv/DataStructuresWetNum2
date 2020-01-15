@@ -88,10 +88,16 @@
 		<Unit filename="/home/nomi/DS2/main.cpp">
 			<Option target="DS2"/>
 		</Unit>
-		<Unit filename="/home/nomi/DS2/rankAvlTree.cpp">
+		<Unit filename="/home/nomi/DS2/src1/avlTree.cpp">
 			<Option target="DS2"/>
 		</Unit>
-		<Unit filename="/home/nomi/DS2/rankNode.cpp">
+		<Unit filename="/home/nomi/DS2/src1/list.cpp">
+			<Option target="DS2"/>
+		</Unit>
+		<Unit filename="/home/nomi/DS2/src1/node.cpp">
+			<Option target="DS2"/>
+		</Unit>
+		<Unit filename="/home/nomi/DS2/src1/treeExceptions.cpp">
 			<Option target="DS2"/>
 		</Unit>
 		<Unit filename="/home/nomi/DS2/unionFind.cpp">

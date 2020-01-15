@@ -338,7 +338,7 @@ void AVLTree<Key, Data, Compare>::ToDataListAux(List<Data*>& list, Node<Key, Dat
         return;
     }
 	ToDataListAux(list, currentNode->left);
-	list.pushBack(currentNode->data);
+	list.PushBack(currentNode->data);
 	ToDataListAux(list, currentNode->right);
 }
 
