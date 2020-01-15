@@ -43,10 +43,10 @@ RM = /home/nomi/Downloads/clion-2019.3.1/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nomi/DS2
+CMAKE_SOURCE_DIR = /home/nomi/dataStr2/DataStructuresWetNum2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nomi/DS2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DS2.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/DS2.dir/flags.make
 
 CMakeFiles/DS2.dir/main.cpp.o: CMakeFiles/DS2.dir/flags.make
 CMakeFiles/DS2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DS2.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/main.cpp.o -c /home/nomi/DS2/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DS2.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/main.cpp.o -c /home/nomi/dataStr2/DataStructuresWetNum2/main.cpp
 
 CMakeFiles/DS2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/main.cpp > CMakeFiles/DS2.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/dataStr2/DataStructuresWetNum2/main.cpp > CMakeFiles/DS2.dir/main.cpp.i
 
 CMakeFiles/DS2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/main.cpp -o CMakeFiles/DS2.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/dataStr2/DataStructuresWetNum2/main.cpp -o CMakeFiles/DS2.dir/main.cpp.s
 
 CMakeFiles/DS2.dir/unionFind.cpp.o: CMakeFiles/DS2.dir/flags.make
 CMakeFiles/DS2.dir/unionFind.cpp.o: ../unionFind.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DS2.dir/unionFind.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/unionFind.cpp.o -c /home/nomi/DS2/unionFind.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DS2.dir/unionFind.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/unionFind.cpp.o -c /home/nomi/dataStr2/DataStructuresWetNum2/unionFind.cpp
 
 CMakeFiles/DS2.dir/unionFind.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/unionFind.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/unionFind.cpp > CMakeFiles/DS2.dir/unionFind.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/dataStr2/DataStructuresWetNum2/unionFind.cpp > CMakeFiles/DS2.dir/unionFind.cpp.i
 
 CMakeFiles/DS2.dir/unionFind.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/unionFind.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/unionFind.cpp -o CMakeFiles/DS2.dir/unionFind.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/dataStr2/DataStructuresWetNum2/unionFind.cpp -o CMakeFiles/DS2.dir/unionFind.cpp.s
 
 CMakeFiles/DS2.dir/hash.cpp.o: CMakeFiles/DS2.dir/flags.make
 CMakeFiles/DS2.dir/hash.cpp.o: ../hash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DS2.dir/hash.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/hash.cpp.o -c /home/nomi/DS2/hash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DS2.dir/hash.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS2.dir/hash.cpp.o -c /home/nomi/dataStr2/DataStructuresWetNum2/hash.cpp
 
 CMakeFiles/DS2.dir/hash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS2.dir/hash.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/DS2/hash.cpp > CMakeFiles/DS2.dir/hash.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nomi/dataStr2/DataStructuresWetNum2/hash.cpp > CMakeFiles/DS2.dir/hash.cpp.i
 
 CMakeFiles/DS2.dir/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS2.dir/hash.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/DS2/hash.cpp -o CMakeFiles/DS2.dir/hash.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nomi/dataStr2/DataStructuresWetNum2/hash.cpp -o CMakeFiles/DS2.dir/hash.cpp.s
 
 # Object files for target DS2
 DS2_OBJECTS = \
@@ -110,7 +110,7 @@ DS2: CMakeFiles/DS2.dir/unionFind.cpp.o
 DS2: CMakeFiles/DS2.dir/hash.cpp.o
 DS2: CMakeFiles/DS2.dir/build.make
 DS2: CMakeFiles/DS2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DS2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DS2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/DS2.dir/clean:
 .PHONY : CMakeFiles/DS2.dir/clean
 
 CMakeFiles/DS2.dir/depend:
-	cd /home/nomi/DS2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nomi/DS2 /home/nomi/DS2 /home/nomi/DS2/cmake-build-debug /home/nomi/DS2/cmake-build-debug /home/nomi/DS2/cmake-build-debug/CMakeFiles/DS2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nomi/dataStr2/DataStructuresWetNum2 /home/nomi/dataStr2/DataStructuresWetNum2 /home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug /home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug /home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles/DS2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DS2.dir/depend
 

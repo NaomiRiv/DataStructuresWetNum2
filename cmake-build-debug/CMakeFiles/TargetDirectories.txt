@@ -1,3 +1,3 @@
-/home/nomi/DS2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/nomi/DS2/cmake-build-debug/CMakeFiles/DS2.dir
-/home/nomi/DS2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles/DS2.dir
+/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles/edit_cache.dir

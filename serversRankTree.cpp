@@ -90,7 +90,27 @@ public:
 
     }
 
-    int SumTraffic();
+    int HighestSumAux (int sum, SRNode* currentNode, bool isRightChild) {
+        if (!currentNode) {
+            return sum;
+        }
+        if (!isRightChild ) {
+            if (currentNode->right) {
+                sum += currentNode->right->sum;
+            }
+            sum += currentNode->key->traffic;
+        }
+        isRightChild = (currentNode == currentNode->parent->right);
+        HighestSumAux(sum, currentNode->parent, isRightChild);
+    }
+
+    int HighestSum(int k) {
+        int sum = 0;
+        int size = GetSize();
+        int i = size - k;
+        SRNode* startNode = Select(i, treeRoot);
+        return HighestSumAux(0, treeRoot, false);
+    }
     bool IsEmpty();
     int GetSize();
     bool IsInTree(const SRKey key);

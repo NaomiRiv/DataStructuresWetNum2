@@ -44,10 +44,10 @@ RM = /home/nomi/Downloads/clion-2019.3.1/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nomi/DS2
+CMAKE_SOURCE_DIR = /home/nomi/dataStr2/DataStructuresWetNum2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nomi/DS2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ preinstall:
 CMakeFiles/DS2.dir/all:
 	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/depend
 	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nomi/DS2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target DS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target DS2"
 .PHONY : CMakeFiles/DS2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DS2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nomi/DS2/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DS2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nomi/DS2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/DS2.dir/rule
 
 # Convenience name for target.
