@@ -8,18 +8,28 @@
 #define RESIZE 2    // resize factor
 #define COLLAPSE 4  // collapse factor
 
-template <typename Data>
+/**
+ * Hash table contains the serverID as the keys and as the data contains the dataCentersID and traffic
+ * When the data centers merge we won't change the dataCenterID but when
+ * the traffic updated we will obviously  update it.
+ */
+
+struct HashServersData {
+    int dataCenterID;
+    int traffic;
+};
+
 class Hash {
     // cell in the hash table
     struct Cell {
-        AVLTree<int, Data>* chain;
+        AVLTree<int, HashServersData>* chain;
 
-        Cell() : chain(new AVLTree<int, Data>()) {}
+        Cell() : chain(new AVLTree<int, HashServersData>()) {}
         // to destroy the cell we need to destroy the whole chain of the cell
         ~Cell() {
-            List<Data*> dataList = chain->toDataList();
+            List<HashServersData*> dataList = chain->GetDataList();
 
-            for (typename List<Data*>::iterator iterator = dataList.begin(); iterator != dataList.end(); ++iterator) {
+            for (typename List<HashServersData*>::iterator iterator = dataList.begin(); iterator != dataList.end(); ++iterator) {
                 delete *iterator;
             }
             delete chain;
@@ -33,7 +43,7 @@ class Hash {
 
     void updateSize();
     int hash(int x);
-    void insert(int keyToInsert, Data const& dataToInsert, bool checkBalanceSize = true);
+    void insert(int keyToInsert, HashServersData const& dataToInsert, bool checkBalanceSize = true);
     void expand();
     void collapse();
 
@@ -44,26 +54,26 @@ public:
     bool IsMember(int x);
 
     /* Gets a key and data and insert it to the HashTable */
-    void Insert(int key, Data const& data);
+    void Insert(int key, HashServersData const& data);
 
     /* Gets the data attributed to a key */
-    Data Get(int key);
+    HashServersData Get(int key);
 
     /* Gets a key and Removes it from the Hash Table */
-    Data Remove(int x);
+    HashServersData Remove(int x);
 
     ~Hash();
 };
 
-template <typename Data>
-int Hash<Data>::hash(int num) {
+
+int Hash::hash(int num) {
     return num % hashSize;
 }
 
-template <typename Data>
-void Hash<Data>::insert(int key, Data const& data, bool balance) {
+
+void Hash::insert(int key, HashServersData const& data, bool balance) {
     Cell* cellToInsert = tableArray[hash(key)];
-    cellToInsert->chain->insert(key, new Data(data));
+    cellToInsert->chain->AddToTree(key, new HashServersData(data));
     hashFilled++;
 
     if (balance) {
@@ -72,8 +82,7 @@ void Hash<Data>::insert(int key, Data const& data, bool balance) {
 }
 
 
-template <typename Data>
-void Hash<Data>::updateSize() {
+void Hash::updateSize() {
     // change size if needed
     if (hashFilled >= hashSize - 1) {
         expand();
@@ -83,8 +92,8 @@ void Hash<Data>::updateSize() {
     }
 }
 
-template <typename Data>
-void Hash<Data>::expand() {
+
+void Hash::expand() {
     int prevSize = hashSize;
     Cell** prevTable = tableArray;
 
@@ -97,10 +106,10 @@ void Hash<Data>::expand() {
         tableArray[i] = new Cell();
     }
     for (int i = 0; i < prevSize; i++) {
-        List<int> keyList = prevTable[i]->chain->toKeyList();
-        List<Data*> dataList = prevTable[i]->chain->toDataList();
+        List<int> keyList = prevTable[i]->chain->GetKeyList();
+        List<HashServersData*> dataList = prevTable[i]->chain->GetDataList();
 
-        typename List<Data*>::iterator dataIterator = dataList.begin();
+        typename List<HashServersData*>::iterator dataIterator = dataList.begin();
 
         for (List<int>::iterator iterator = keyList.begin(); iterator != keyList.end(); ++iterator) {
             insert(*iterator, *(*(dataIterator++)), false);
@@ -110,8 +119,8 @@ void Hash<Data>::expand() {
     delete[] prevTable;
 }
 
-template <typename Data>
-void Hash<Data>::collapse() {
+
+void Hash::collapse() {
     int prevSize = hashSize;
     Cell** prevTable = tableArray;
 
@@ -124,10 +133,10 @@ void Hash<Data>::collapse() {
         tableArray[i] = new Cell();
     }
     for (int i = 0; i < prevSize; i++) {
-        List<int> keyList = prevTable[i]->chain->toKeyList();
-        List<Data*> dataList = prevTable[i]->chain->toDataList();
+        List<int> keyList = prevTable[i]->chain->GetKeyList();
+        List<HashServersData*> dataList = prevTable[i]->chain->GetDataList();
 
-        typename List<Data*>::iterator dataIterator = dataList.begin();
+        typename List<HashServersData*>::iterator dataIterator = dataList.begin();
 
         for (List<int>::iterator iterator = keyList.begin(); iterator != keyList.end(); ++iterator) {
             insert(*iterator, *(*(dataIterator++)), false);
@@ -137,8 +146,8 @@ void Hash<Data>::collapse() {
     delete[] prevTable;
 }
 
-template <typename Data>
-Hash<Data>::Hash() : hashSize(INITIAL), hashFilled(0) {
+
+Hash::Hash() : hashSize(INITIAL), hashFilled(0) {
     tableArray = new Cell*[hashSize];
 
     for (int i = 0; i < hashSize; i++) {
@@ -146,60 +155,60 @@ Hash<Data>::Hash() : hashSize(INITIAL), hashFilled(0) {
     }
 }
 
-template <typename Data>
-void Hash<Data>::Insert(int key, Data const& data) {
+
+void Hash::Insert(int key, HashServersData const& data) {
     insert(key, data);
 }
 
-template <typename Data>
-Data Hash<Data>::Remove(int key) {
+
+HashServersData Hash::Remove(int key) {
     int hashedKey = hash(key);
 
     Cell* cell = tableArray[hashedKey];
-    Data* pData;
+    HashServersData* pData;
 
     try {
-    pData = cell->chain->getData(key);
+    pData = cell->chain->GetData(key);
     } catch (Tree::KeyNotExists& e) {
         throw std::range_error("key doesn't exist");
     }
     try {
-        cell->chain->erase(key);
+        cell->chain->RemoveKeyFromTree(key);
     } catch (Tree::KeyNotExists& e) {
         throw std::range_error("key doesn't exist");
     }
     --hashFilled;
     updateSize();
 
-    Data dataToReturn = *pData;
+    HashServersData dataToReturn = *pData;
 
     delete pData;
 
     return dataToReturn;
 }
 
-template <typename Data>
-bool Hash<Data>::IsMember(int key) {
+
+bool Hash::IsMember(int key) {
     int hashedKey = hash(key);
 
-    return tableArray[hashedKey]->chain->contains(key);
+    return tableArray[hashedKey]->chain->IsInTree(key);
 }
 
-template <typename Data>
-Data Hash<Data>::Get(int key) {
+
+HashServersData Hash::Get(int key) {
     Cell* cell = tableArray[hash(key)];
-    Data* data;
+    HashServersData* data;
 
     try {
-        data = cell->chain->getData(key);
+        data = cell->chain->GetData(key);
     } catch (Tree::KeyNotExists& e) {
         throw std::range_error("key doesn't exist");
     }
     return *data;
 }
 
-template <typename Data>
-Hash<Data>::~Hash() {
+
+Hash::~Hash() {
     for (int i = 0; i < hashSize; i++) {
         delete tableArray[i];
     }
