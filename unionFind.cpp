@@ -5,6 +5,9 @@
 #include <iostream>
 #include "serversRankTree.cpp"
 
+#define TO_INDEX(i) (i-1)
+#define TO_SET(i) (i+1)
+
 void ValidateI(int i, int len) {
   if (i <= 0 || i > len) {
     throw std::range_error("out of range");
@@ -38,7 +41,7 @@ public:
     /* Finds the data which corresponds with the index and returns it */
     ServersTree GetData(int index);
 
-    List<SRKey>* merge(ServersTree* lhsTree, ServersTree* rhsTree) {
+    static List<SRKey>* merge(ServersTree* lhsTree, ServersTree* rhsTree) {
         List<SRKey> lhsKeys = lhsTree->GetKeyList();
         List<SRKey> rhsKeys = lhsTree->GetKeyList();
 
@@ -47,7 +50,7 @@ public:
         typename List<SRKey>::iterator lhsIt = lhsKeys.begin();
         typename List<SRKey>::iterator rhsIt = rhsKeys.begin();
 
-        while(lhsIt != lhsKeys.end() || rhsIt != rhsKeys.end()) {
+        while(lhsIt != lhsKeys.end() && rhsIt != rhsKeys.end()) {
             if (cmp(*lhsIt, *rhsIt)) {
                 ret->PushBack(*lhsIt);
                 lhsIt++;
@@ -83,7 +86,7 @@ UnionFind::UnionFind(int n) {
 
     for (int i = 0; i < n; i++) {
     dataArray[i] = new ServersTree();
-    nodeArray[i] = new UFNode(i);
+    nodeArray[i] = new UFNode(TO_SET(i));
     }
 }
 
@@ -91,9 +94,7 @@ UnionFind::UnionFind(int n) {
 int UnionFind::Find(int i) {
     ValidateI(i, length);
 
-    int index = i-1;
-
-    UFNode* node = nodeArray[index];
+    UFNode* node = nodeArray[TO_INDEX(i)];
     UFNode* currentNode = node;
 
     while (node->parent) {
@@ -105,7 +106,7 @@ int UnionFind::Find(int i) {
         currentNode->parent = node;
         currentNode = oldParent;
     }
-    return node->i+1;
+    return node->i;
 }
 
 
@@ -119,23 +120,23 @@ int UnionFind::Union(int i, int j) {
     ValidateI(i, length);
     ValidateI(j, length);
 
-    int index1 = i-1;
-    int index2 = i-1;
+    //int index1 = i-1;
+    //int index2 = i-1;
 
-    UFNode* set1 = nodeArray[Find(index1)];
-    UFNode* set2 = nodeArray[Find(index2)];
+    UFNode* set1 = nodeArray[TO_INDEX(Find(i))];
+    UFNode* set2 = nodeArray[TO_INDEX(Find(j))];
 
     if (i == j || set1 == set2) {
         return i;
     }
-    if (nodeArray[i] != set1 || nodeArray[j] != set2) {
-        throw std::invalid_argument("Not sets");
-    }
+    //if (nodeArray[TO_INDEX(i)] != set1 || nodeArray[TO_INDEX(j)] != set2) {
+    //    throw std::invalid_argument("Not sets");
+    //}
     UFNode* bigSet = set1;
     UFNode* smallSet = set2;
 
     if (set1->size < set2->size) {
-        std::swap(set1, set2);
+        std::swap(bigSet, smallSet);
     }
     smallSet->parent = bigSet;
     bigSet->size += smallSet->size;
@@ -146,11 +147,11 @@ int UnionFind::Union(int i, int j) {
 
     delete merged;
 
-    ServersTree* oldTree = dataArray[bigSet->i];
-    dataArray[bigSet->i] = newTree;
+    ServersTree* oldTree = dataArray[TO_INDEX(bigSet->i)];
+    dataArray[TO_INDEX(bigSet->i)] = newTree;
     delete oldTree;
 
-    return bigSet->i+1;
+    return bigSet->i;
 }
 
 

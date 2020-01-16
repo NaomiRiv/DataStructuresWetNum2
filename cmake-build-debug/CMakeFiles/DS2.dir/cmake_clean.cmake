@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DS2.dir/hash.cpp.o"
-  "CMakeFiles/DS2.dir/main.cpp.o"
-  "CMakeFiles/DS2.dir/unionFind.cpp.o"
+  "CMakeFiles/DS2.dir/mainTests.cpp.o"
   "DS2"
   "DS2.pdb"
 )

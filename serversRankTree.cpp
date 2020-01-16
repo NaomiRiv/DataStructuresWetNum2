@@ -31,9 +31,6 @@ private:
     SRNode* treeRoot;
     int treeSize;
 
-    int r;
-    int sumTraffic;
-
     /* auxiliary methods */
     static void removeExcessiveNode(ServersTree* avl, SRNode* curr, int wanted); // removes node from the complete tree
     static void insertListIntoAnEmptyAVLTree(SRNode* curr, int length, typename List<SRKey>::iterator& keyListIterator); // inserts list into empty tree
@@ -220,12 +217,12 @@ ServersTree* ServersTree::FromSortedList(List<SRKey> &keyList) {
 }
 
 void updateR(SRNode* curr) {
-    if (!curr) return;
+    if (!curr || !curr->key) return;
     curr->r = (curr->left ? curr->left->r : 0) + (curr->right ? curr->right->r : 0) +1;
 }
 
 void updateSum(SRNode* curr) {
-    if (!curr) return;
+    if (!curr || !curr->key) return;
     curr->sum = (curr->left ? curr->left->sum : 0) + (curr->right ? curr->right->sum : 0) + curr->key->traffic;
 }
 
@@ -446,6 +443,8 @@ void ServersTree::Balance(SRNode* currentNode, bool balanceInsert) {
         return;
     }
 	Balance(initialCurrentParent);
+    updateR(currentNode);
+    updateSum(currentNode);
 }
 
 

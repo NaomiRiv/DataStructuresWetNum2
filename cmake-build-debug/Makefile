@@ -123,86 +123,32 @@ DS2/fast:
 	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/build
 .PHONY : DS2/fast
 
-hash.o: hash.cpp.o
+mainTests.o: mainTests.cpp.o
 
-.PHONY : hash.o
-
-# target to build an object file
-hash.cpp.o:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/hash.cpp.o
-.PHONY : hash.cpp.o
-
-hash.i: hash.cpp.i
-
-.PHONY : hash.i
-
-# target to preprocess a source file
-hash.cpp.i:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/hash.cpp.i
-.PHONY : hash.cpp.i
-
-hash.s: hash.cpp.s
-
-.PHONY : hash.s
-
-# target to generate assembly for a file
-hash.cpp.s:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/hash.cpp.s
-.PHONY : hash.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : mainTests.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.o
-.PHONY : main.cpp.o
+mainTests.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/mainTests.cpp.o
+.PHONY : mainTests.cpp.o
 
-main.i: main.cpp.i
+mainTests.i: mainTests.cpp.i
 
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-unionFind.o: unionFind.cpp.o
-
-.PHONY : unionFind.o
-
-# target to build an object file
-unionFind.cpp.o:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/unionFind.cpp.o
-.PHONY : unionFind.cpp.o
-
-unionFind.i: unionFind.cpp.i
-
-.PHONY : unionFind.i
+.PHONY : mainTests.i
 
 # target to preprocess a source file
-unionFind.cpp.i:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/unionFind.cpp.i
-.PHONY : unionFind.cpp.i
+mainTests.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/mainTests.cpp.i
+.PHONY : mainTests.cpp.i
 
-unionFind.s: unionFind.cpp.s
+mainTests.s: mainTests.cpp.s
 
-.PHONY : unionFind.s
+.PHONY : mainTests.s
 
 # target to generate assembly for a file
-unionFind.cpp.s:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/unionFind.cpp.s
-.PHONY : unionFind.cpp.s
+mainTests.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/mainTests.cpp.s
+.PHONY : mainTests.cpp.s
 
 # Help Target
 help:
@@ -213,15 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DS2"
 	@echo "... edit_cache"
-	@echo "... hash.o"
-	@echo "... hash.i"
-	@echo "... hash.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... unionFind.o"
-	@echo "... unionFind.i"
-	@echo "... unionFind.s"
+	@echo "... mainTests.o"
+	@echo "... mainTests.i"
+	@echo "... mainTests.s"
 .PHONY : help
 
 

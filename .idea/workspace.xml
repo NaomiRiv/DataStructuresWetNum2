@@ -11,7 +11,28 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="466b61ac-450a-4652-8a2c-a4e701c17235" name="Default Changelist" comment="" />
+    <list default="true" id="466b61ac-450a-4652-8a2c-a4e701c17235" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mainTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataCenterManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DataCenterManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DS2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DS2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DS2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DS2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serversRankTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/serversRankTree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unionFind.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unionFind.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578235448816</updated>
       <workItem from="1578235452396" duration="17051000" />
-      <workItem from="1579118835015" duration="2332000" />
+      <workItem from="1579118835015" duration="21486000" />
     </task>
     <servers />
   </component>
@@ -84,13 +105,45 @@
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
     <state x="693" y="282" width="534" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1920.1006@0.30.1920.1006" timestamp="1579080776646" />
-    <state x="322" y="246" width="315" height="577" key="RollbackChangesDialog" timestamp="1579094564813">
+    <state width="908" height="262" key="GridCell.Tab.0.bottom" timestamp="1579186199292">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state x="322" y="246" width="315" height="577" key="RollbackChangesDialog/0.30.1920.1006@0.30.1920.1006" timestamp="1579094564813" />
-    <state x="451" y="367" width="1336" height="582" key="find.popup" timestamp="1579093382090">
+    <state width="908" height="262" key="GridCell.Tab.0.bottom/0.30.1920.1006@0.30.1920.1006" timestamp="1579186199292" />
+    <state width="908" height="262" key="GridCell.Tab.0.center" timestamp="1579186199291">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state x="451" y="367" width="1336" height="582" key="find.popup/0.30.1920.1006@0.30.1920.1006" timestamp="1579093382090" />
+    <state width="908" height="262" key="GridCell.Tab.0.center/0.30.1920.1006@0.30.1920.1006" timestamp="1579186199291" />
+    <state width="908" height="262" key="GridCell.Tab.0.left" timestamp="1579186199291">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state width="908" height="262" key="GridCell.Tab.0.left/0.30.1920.1006@0.30.1920.1006" timestamp="1579186199291" />
+    <state width="908" height="262" key="GridCell.Tab.0.right" timestamp="1579186199291">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state width="908" height="262" key="GridCell.Tab.0.right/0.30.1920.1006@0.30.1920.1006" timestamp="1579186199291" />
+    <state width="908" height="328" key="GridCell.Tab.1.bottom" timestamp="1579185431609">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state width="908" height="328" key="GridCell.Tab.1.bottom/0.30.1920.1006@0.30.1920.1006" timestamp="1579185431609" />
+    <state width="908" height="328" key="GridCell.Tab.1.center" timestamp="1579185431609">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state width="908" height="328" key="GridCell.Tab.1.center/0.30.1920.1006@0.30.1920.1006" timestamp="1579185431609" />
+    <state width="908" height="328" key="GridCell.Tab.1.left" timestamp="1579185431608">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state width="908" height="328" key="GridCell.Tab.1.left/0.30.1920.1006@0.30.1920.1006" timestamp="1579185431608" />
+    <state width="908" height="328" key="GridCell.Tab.1.right" timestamp="1579185431609">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state width="908" height="328" key="GridCell.Tab.1.right/0.30.1920.1006@0.30.1920.1006" timestamp="1579185431609" />
+    <state x="322" y="246" width="315" height="577" key="RollbackChangesDialog" timestamp="1579181775611">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state x="322" y="246" width="315" height="577" key="RollbackChangesDialog/0.30.1920.1006@0.30.1920.1006" timestamp="1579181775611" />
+    <state x="451" y="368" width="1336" height="582" key="find.popup" timestamp="1579168104898">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state x="451" y="368" width="1336" height="582" key="find.popup/0.30.1920.1006@0.30.1920.1006" timestamp="1579168104897" />
   </component>
 </project>
