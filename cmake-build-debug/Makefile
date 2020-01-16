@@ -123,32 +123,59 @@ DS2/fast:
 	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/build
 .PHONY : DS2/fast
 
-mainTests.o: mainTests.cpp.o
+library.o: library.cpp.o
 
-.PHONY : mainTests.o
+.PHONY : library.o
 
 # target to build an object file
-mainTests.cpp.o:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/mainTests.cpp.o
-.PHONY : mainTests.cpp.o
+library.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/library.cpp.o
+.PHONY : library.cpp.o
 
-mainTests.i: mainTests.cpp.i
+library.i: library.cpp.i
 
-.PHONY : mainTests.i
+.PHONY : library.i
 
 # target to preprocess a source file
-mainTests.cpp.i:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/mainTests.cpp.i
-.PHONY : mainTests.cpp.i
+library.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/library.cpp.i
+.PHONY : library.cpp.i
 
-mainTests.s: mainTests.cpp.s
+library.s: library.cpp.s
 
-.PHONY : mainTests.s
+.PHONY : library.s
 
 # target to generate assembly for a file
-mainTests.cpp.s:
-	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/mainTests.cpp.s
-.PHONY : mainTests.cpp.s
+library.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/library.cpp.s
+.PHONY : library.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/DS2.dir/build.make CMakeFiles/DS2.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DS2"
 	@echo "... edit_cache"
-	@echo "... mainTests.o"
-	@echo "... mainTests.i"
-	@echo "... mainTests.s"
+	@echo "... library.o"
+	@echo "... library.i"
+	@echo "... library.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

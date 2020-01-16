@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nomi/dataStr2/DataStructuresWetNum2/mainTests.cpp" "/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles/DS2.dir/mainTests.cpp.o"
+  "/home/nomi/dataStr2/DataStructuresWetNum2/library.cpp" "/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles/DS2.dir/library.cpp.o"
+  "/home/nomi/dataStr2/DataStructuresWetNum2/main.cpp" "/home/nomi/dataStr2/DataStructuresWetNum2/cmake-build-debug/CMakeFiles/DS2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

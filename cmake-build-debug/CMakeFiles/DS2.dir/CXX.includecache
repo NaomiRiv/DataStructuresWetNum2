@@ -9,8 +9,6 @@
 /home/nomi/dataStr2/DataStructuresWetNum2/DataCenterManager.cpp
 library2.h
 /home/nomi/dataStr2/DataStructuresWetNum2/library2.h
-src1/avlTree.cpp
-/home/nomi/dataStr2/DataStructuresWetNum2/src1/avlTree.cpp
 unionFind.cpp
 /home/nomi/dataStr2/DataStructuresWetNum2/unionFind.cpp
 hash.cpp
@@ -24,25 +22,13 @@ iostream
 src1/avlTree.cpp
 /home/nomi/dataStr2/DataStructuresWetNum2/src1/avlTree.cpp
 
-/home/nomi/dataStr2/DataStructuresWetNum2/library2.h
-
-/home/nomi/dataStr2/DataStructuresWetNum2/mainTests.cpp
-iostream
--
-assert.h
--
-cstdlib
--
-serversRankTree.cpp
-/home/nomi/dataStr2/DataStructuresWetNum2/serversRankTree.cpp
+/home/nomi/dataStr2/DataStructuresWetNum2/library.cpp
 library2.h
 /home/nomi/dataStr2/DataStructuresWetNum2/library2.h
-unionFind.cpp
-/home/nomi/dataStr2/DataStructuresWetNum2/unionFind.cpp
 DataCenterManager.cpp
 /home/nomi/dataStr2/DataStructuresWetNum2/DataCenterManager.cpp
-hash.cpp
-/home/nomi/dataStr2/DataStructuresWetNum2/hash.cpp
+
+/home/nomi/dataStr2/DataStructuresWetNum2/library2.h
 
 /home/nomi/dataStr2/DataStructuresWetNum2/serversRankTree.cpp
 iostream

@@ -82,7 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/nomi/dataStr2/DataStructuresWetNum2/mainTests.cpp">
+		<Unit filename="/home/nomi/dataStr2/DataStructuresWetNum2/library.cpp">
+			<Option target="DS2"/>
+		</Unit>
+		<Unit filename="/home/nomi/dataStr2/DataStructuresWetNum2/library2.h">
+			<Option target="DS2"/>
+		</Unit>
+		<Unit filename="/home/nomi/dataStr2/DataStructuresWetNum2/main.cpp">
 			<Option target="DS2"/>
 		</Unit>
 		<Unit filename="/home/nomi/dataStr2/DataStructuresWetNum2/CMakeLists.txt">

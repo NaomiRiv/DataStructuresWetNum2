@@ -62,6 +62,15 @@ public:
     /* Gets a key and Removes it from the Hash Table */
     HashServersData Remove(int x);
 
+    void Update(int serverID, int traffic) {
+        int hashedKey = hash(serverID);
+
+        Cell* cell = tableArray[hashedKey];
+        HashServersData* pData;
+            pData = cell->chain->GetData(serverID);
+            pData->traffic = traffic;
+    }
+
     ~Hash();
 };
 

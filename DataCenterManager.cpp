@@ -1,5 +1,5 @@
 #include "library2.h"
-#include "src1/avlTree.cpp"
+//#include "src1/avlTree.cpp"
 #include "unionFind.cpp"
 #include "hash.cpp"
 #include <assert.h>
@@ -67,7 +67,7 @@ public:
         keyToDelete.serversID = serverID;
         keyToDelete.traffic = hisTraffic;
         int num1 = mainUnion->Find(hisDataCenter);
-        mainUnion->GetData(num1).RemoveKeyFromTree(keyToDelete);
+        mainUnion->RemoveData(hisDataCenter, serverID, hisTraffic);
         mainTree->RemoveKeyFromTree(keyToDelete);
         ServersCount--;
         return SUCCESS;
@@ -80,27 +80,15 @@ public:
         if(!mainHash->IsMember(serverID)){
             return FAILURE;
         }
-        HashServersData ServerToSet = mainHash->Get(serverID);
-        int hisDataCenter = ServerToSet.dataCenterID;
-        int hisFormerTraffic = ServerToSet.traffic; //save his old traffic to check if he exists in trees
-        ServerToSet.traffic = traffic; //update traffic in hashtable
-        SRKey keyToCheck;
-        keyToCheck.serversID = serverID;
-        keyToCheck.traffic = hisFormerTraffic;
-        SRKey keyToSet;
-        keyToSet.serversID = serverID;
-        keyToSet.traffic = traffic;
-        int num1 = mainUnion->Find(hisDataCenter);
-        if(!mainTree->IsInTree(keyToCheck)){
-            mainTree->AddToTree(keyToSet);
-            mainUnion->GetData(num1).AddToTree(keyToSet);
-            return SUCCESS;
+        HashServersData serverData = mainHash->Get(serverID);
+        bool isNew;
+        if (mainTree->IsInTree({serverData.traffic, serverID})) {
+            mainTree->RemoveKeyFromTree({serverData.traffic, serverID});
+            isNew = false;
         }
-        mainTree->RemoveKeyFromTree(keyToCheck);
-        mainTree->AddToTree(keyToSet);
-        mainUnion->GetData(num1).RemoveKeyFromTree(keyToCheck);
-        mainUnion->GetData(num1).AddToTree(keyToSet);
-        return SUCCESS;
+        mainTree->AddToTree({traffic, serverID});
+        mainUnion->UpdateData(serverData.dataCenterID, serverID, traffic, isNew ? serverData.traffic : -1);
+        mainHash->Update(serverID, traffic);
     }
 
     //**if k is bigger then number of servers just return all of them
@@ -109,12 +97,14 @@ public:
             return INVALID_INPUT;
         }
         if(dataCenterID==0){
-            *traffic = mainTree->HighestSum( k);
+            *traffic = mainTree->HighestSum(k);
+            return SUCCESS;
+        } else {
+            int num1 = mainUnion->Find(dataCenterID);
+            *traffic = mainUnion->GetData(num1).HighestSum(k);
             return SUCCESS;
         }
-            int num1 = mainUnion->Find(dataCenterID);
-            *traffic = mainUnion->GetData(num1).HighestSum( k);
-            return SUCCESS;
     }
+
 
 };

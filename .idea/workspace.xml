@@ -12,23 +12,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="466b61ac-450a-4652-8a2c-a4e701c17235" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mainTests.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataCenterManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DataCenterManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS2.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DS2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DS2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DS2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DS2.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/hash.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serversRankTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/serversRankTree.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unionFind.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unionFind.cpp" afterDir="false" />
@@ -94,6 +94,8 @@
       <updated>1578235448816</updated>
       <workItem from="1578235452396" duration="17051000" />
       <workItem from="1579118835015" duration="21486000" />
+      <workItem from="1579187487224" duration="539000" />
+      <workItem from="1579188445018" duration="7032000" />
     </task>
     <servers />
   </component>
@@ -105,45 +107,74 @@
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
     <state x="693" y="282" width="534" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1920.1006@0.30.1920.1006" timestamp="1579080776646" />
-    <state width="908" height="262" key="GridCell.Tab.0.bottom" timestamp="1579186199292">
+    <state width="1878" height="265" key="GridCell.Tab.0.bottom" timestamp="1579197056237">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state width="908" height="262" key="GridCell.Tab.0.bottom/0.30.1920.1006@0.30.1920.1006" timestamp="1579186199292" />
-    <state width="908" height="262" key="GridCell.Tab.0.center" timestamp="1579186199291">
+    <state width="1878" height="265" key="GridCell.Tab.0.bottom/0.30.1920.1006@0.30.1920.1006" timestamp="1579197056237" />
+    <state width="1878" height="265" key="GridCell.Tab.0.center" timestamp="1579197056236">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state width="908" height="262" key="GridCell.Tab.0.center/0.30.1920.1006@0.30.1920.1006" timestamp="1579186199291" />
-    <state width="908" height="262" key="GridCell.Tab.0.left" timestamp="1579186199291">
+    <state width="1878" height="265" key="GridCell.Tab.0.center/0.30.1920.1006@0.30.1920.1006" timestamp="1579197056236" />
+    <state width="1878" height="265" key="GridCell.Tab.0.left" timestamp="1579197056236">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state width="908" height="262" key="GridCell.Tab.0.left/0.30.1920.1006@0.30.1920.1006" timestamp="1579186199291" />
-    <state width="908" height="262" key="GridCell.Tab.0.right" timestamp="1579186199291">
+    <state width="1878" height="265" key="GridCell.Tab.0.left/0.30.1920.1006@0.30.1920.1006" timestamp="1579197056236" />
+    <state width="1878" height="265" key="GridCell.Tab.0.right" timestamp="1579197056236">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state width="908" height="262" key="GridCell.Tab.0.right/0.30.1920.1006@0.30.1920.1006" timestamp="1579186199291" />
-    <state width="908" height="328" key="GridCell.Tab.1.bottom" timestamp="1579185431609">
+    <state width="1878" height="265" key="GridCell.Tab.0.right/0.30.1920.1006@0.30.1920.1006" timestamp="1579197056236" />
+    <state width="1878" height="328" key="GridCell.Tab.1.bottom" timestamp="1579197055740">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state width="908" height="328" key="GridCell.Tab.1.bottom/0.30.1920.1006@0.30.1920.1006" timestamp="1579185431609" />
-    <state width="908" height="328" key="GridCell.Tab.1.center" timestamp="1579185431609">
+    <state width="1878" height="328" key="GridCell.Tab.1.bottom/0.30.1920.1006@0.30.1920.1006" timestamp="1579197055740" />
+    <state width="1878" height="328" key="GridCell.Tab.1.center" timestamp="1579197055739">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state width="908" height="328" key="GridCell.Tab.1.center/0.30.1920.1006@0.30.1920.1006" timestamp="1579185431609" />
-    <state width="908" height="328" key="GridCell.Tab.1.left" timestamp="1579185431608">
+    <state width="1878" height="328" key="GridCell.Tab.1.center/0.30.1920.1006@0.30.1920.1006" timestamp="1579197055739" />
+    <state width="1878" height="328" key="GridCell.Tab.1.left" timestamp="1579197055738">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state width="908" height="328" key="GridCell.Tab.1.left/0.30.1920.1006@0.30.1920.1006" timestamp="1579185431608" />
-    <state width="908" height="328" key="GridCell.Tab.1.right" timestamp="1579185431609">
+    <state width="1878" height="328" key="GridCell.Tab.1.left/0.30.1920.1006@0.30.1920.1006" timestamp="1579197055738" />
+    <state width="1878" height="328" key="GridCell.Tab.1.right" timestamp="1579197055740">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state width="908" height="328" key="GridCell.Tab.1.right/0.30.1920.1006@0.30.1920.1006" timestamp="1579185431609" />
+    <state width="1878" height="328" key="GridCell.Tab.1.right/0.30.1920.1006@0.30.1920.1006" timestamp="1579197055740" />
     <state x="322" y="246" width="315" height="577" key="RollbackChangesDialog" timestamp="1579181775611">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
     <state x="322" y="246" width="315" height="577" key="RollbackChangesDialog/0.30.1920.1006@0.30.1920.1006" timestamp="1579181775611" />
-    <state x="451" y="368" width="1336" height="582" key="find.popup" timestamp="1579168104898">
+    <state x="146" y="360" key="com.intellij.ide.util.TipDialog" timestamp="1579188446169">
       <screen x="0" y="30" width="1920" height="1006" />
     </state>
-    <state x="451" y="368" width="1336" height="582" key="find.popup/0.30.1920.1006@0.30.1920.1006" timestamp="1579168104897" />
+    <state x="146" y="360" key="com.intellij.ide.util.TipDialog/0.30.1920.1006@0.30.1920.1006" timestamp="1579188446169" />
+    <state x="451" y="368" width="1336" height="582" key="find.popup" timestamp="1579194660175">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state x="451" y="368" width="1336" height="582" key="find.popup/0.30.1920.1006@0.30.1920.1006" timestamp="1579194660175" />
+    <state x="623" y="248" width="672" height="678" key="search.everywhere.popup" timestamp="1579197007737">
+      <screen x="0" y="30" width="1920" height="1006" />
+    </state>
+    <state x="623" y="248" width="672" height="678" key="search.everywhere.popup/0.30.1920.1006@0.30.1920.1006" timestamp="1579197007737" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/DataCenterManager.cpp</url>
+          <line>95</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/DataCenterManager.cpp</url>
+          <line>102</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/DataCenterManager.cpp</url>
+          <line>76</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

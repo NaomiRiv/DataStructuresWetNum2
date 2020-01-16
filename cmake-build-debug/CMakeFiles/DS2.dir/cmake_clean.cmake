@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DS2.dir/mainTests.cpp.o"
+  "CMakeFiles/DS2.dir/library.cpp.o"
+  "CMakeFiles/DS2.dir/main.cpp.o"
   "DS2"
   "DS2.pdb"
 )

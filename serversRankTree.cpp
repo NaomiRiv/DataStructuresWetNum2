@@ -77,11 +77,11 @@ public:
         if (currentNode == nullptr) {
             return nullptr;
         }
-        if (currentNode->left->r = k-1) {
+        if (currentNode->left && currentNode->left->r ==k-1) {
             return currentNode;
-        } else if (currentNode->left->r > k-1) {
+        } else if (currentNode->left && currentNode->left->r > k-1) {
             return Select(k, currentNode->left);
-        } else {
+        } if (currentNode->left && currentNode->left->r <= k-1) {
             return Select(k-currentNode->left->r-1, currentNode->right);
         }
 
@@ -97,8 +97,10 @@ public:
             }
             sum += currentNode->key->traffic;
         }
-        isRightChild = (currentNode == currentNode->parent->right);
-        HighestSumAux(sum, currentNode->parent, isRightChild);
+        if(currentNode->parent) {
+            isRightChild = (currentNode == currentNode->parent->right);
+        }
+        return HighestSumAux(sum, currentNode->parent, isRightChild);
     }
 
     int HighestSum(int k) {
@@ -229,174 +231,174 @@ void updateSum(SRNode* curr) {
 /* AVL tree rolls */
 
 void ServersTree::RollR(SRNode* nodeB) {
-	SRNode* nodeA = nodeB->left;
+    SRNode* nodeA = nodeB->left;
     SRNode* initialParentNode = nodeB->parent;
 
-	if (nodeA->right) {
+    if (nodeA->right) {
         nodeA->right->parent = nodeB;
     }
-	nodeB->left = nodeA->right;
-	nodeA->right = nodeB;
-	nodeB->parent = nodeA;
-	nodeB->Update();
-	nodeA->Update();
-	nodeA->parent = initialParentNode;
+    nodeB->left = nodeA->right;
+    nodeA->right = nodeB;
+    nodeB->parent = nodeA;
+    nodeB->Update();
+    nodeA->Update();
+    nodeA->parent = initialParentNode;
     updateR(nodeB);
     updateSum(nodeB);
     updateR(nodeA);
     updateSum(nodeA);
-	if (initialParentNode == nullptr) {
-		treeRoot = nodeA;
+    if (initialParentNode == nullptr) {
+        treeRoot = nodeA;
         return;
-	}
-	if (initialParentNode->left == nodeB) {
+    }
+    if (initialParentNode->left == nodeB) {
         initialParentNode->left = nodeA;
     }
-	else if (initialParentNode->right == nodeB) {
+    else if (initialParentNode->right == nodeB) {
         initialParentNode->right = nodeA;
     }
 }
 
 
 void ServersTree::RollL(SRNode* nodeA) {
-	SRNode* nodeB = nodeA->right;
+    SRNode* nodeB = nodeA->right;
     SRNode* initialParentNode = nodeA->parent;
     if (nodeB->left) {
         nodeB->left->parent = nodeA;
     }
-	nodeA->right = nodeB->left;
-	nodeB->left = nodeA;
-	nodeA->parent = nodeB;
-	nodeA->Update();
-	nodeB->Update();
+    nodeA->right = nodeB->left;
+    nodeB->left = nodeA;
+    nodeA->parent = nodeB;
+    nodeA->Update();
+    nodeB->Update();
     updateR(nodeB);
     updateSum(nodeB);
     updateR(nodeA);
     updateSum(nodeA);
-	nodeB->parent = initialParentNode;
-	if (initialParentNode == nullptr) {
-		treeRoot = nodeB;
-		return;
-	}
-	if (initialParentNode->left == nodeA) {
+    nodeB->parent = initialParentNode;
+    if (initialParentNode == nullptr) {
+        treeRoot = nodeB;
+        return;
+    }
+    if (initialParentNode->left == nodeA) {
         initialParentNode->left = nodeB;
     }
-	else if (initialParentNode->right == nodeA) {
+    else if (initialParentNode->right == nodeA) {
         initialParentNode->right = nodeB;
     }
 }
 
 
 void ServersTree::RollRR(SRNode* node) {
-	RollL(node);
+    RollL(node);
 }
 
 
 void ServersTree::RollLL(SRNode* node) {
-	RollR(node);
+    RollR(node);
 }
 
 
 void ServersTree::RollRL(SRNode* node) {
-	RollR(node->right);
-	RollL(node);
+    RollR(node->right);
+    RollL(node);
 }
 
 
 void ServersTree::RollLR(SRNode* node) {
-	RollL(node->left);
-	RollR(node);
+    RollL(node->left);
+    RollR(node);
 }
 // -----------------------------------------------------------------
 
 
 SRNode* ServersTree::GetNode(SRKey const& key, SRNode* currentNode) {
-	if (currentNode == nullptr) {
+    if (currentNode == nullptr) {
         return nullptr;
     }
-	bool lt = cmp(key, *currentNode->key);
-	bool gt = cmp(*currentNode->key, key);
-	if (!lt && !gt) {
+    bool lt = cmp(key, *currentNode->key);
+    bool gt = cmp(*currentNode->key, key);
+    if (!lt && !gt) {
         return currentNode; // they are equal
     }
-	if (lt) {
+    if (lt) {
         return GetNode(key, currentNode->left);
     }
-	return GetNode(key, currentNode->right);
+    return GetNode(key, currentNode->right);
 }
 
 void ServersTree::RemoveKeyFromTreeAux(SRNode* node) {
-	if (node == nullptr) {
+    if (node == nullptr) {
         return;
     }
-	SRNode* parentNode = node->parent;
+    SRNode* parentNode = node->parent;
     SRNode* replacementNode = nullptr;
 
-	bool isRoot = (treeRoot == node);
-	bool isLeftChild = !isRoot && node->IsLeftChild();
-	bool isRightChild = !isRoot && node->IsRightChild();
+    bool isRoot = (treeRoot == node);
+    bool isLeftChild = !isRoot && node->IsLeftChild();
+    bool isRightChild = !isRoot && node->IsRightChild();
 
-	if (!node->left && !node->right) {
-		// node has no children
-		if (isLeftChild) {
+    if (!node->left && !node->right) {
+        // node has no children
+        if (isLeftChild) {
             parentNode->left = nullptr;
         }
-		else if (isRightChild) {
+        else if (isRightChild) {
             parentNode->right = nullptr;
         }
-		if (node == treeRoot) {
+        if (node == treeRoot) {
             treeRoot = nullptr;
         }
-		Balance(parentNode, false);
-		delete node;
-	} else {
-		if (!node->left || !node->right) {
-			// node has one child
-			replacementNode = node->left ? node->left : node->right;
-			replacementNode->parent = parentNode;
-			if (isLeftChild) {
+        Balance(parentNode, false);
+        delete node;
+    } else {
+        if (!node->left || !node->right) {
+            // node has one child
+            replacementNode = node->left ? node->left : node->right;
+            replacementNode->parent = parentNode;
+            if (isLeftChild) {
                 parentNode->left = replacementNode;
             }
-			else if (isRightChild) {
+            else if (isRightChild) {
                 parentNode->right = replacementNode;
             }
-			Balance(parentNode, false);
-			delete node;
-			if (parentNode == nullptr) {
+            Balance(parentNode, false);
+            delete node;
+            if (parentNode == nullptr) {
                 treeRoot = replacementNode;
             }
-		} else {
-			// node has two children
-			replacementNode = node->Successor();
-			delete node->key;
-			node->key = new SRKey(*(replacementNode->key));
-			RemoveKeyFromTreeAux(replacementNode);
-		}
-	}
-	updateR(node);
-	updateSum(node);
+        } else {
+            // node has two children
+            replacementNode = node->Successor();
+            delete node->key;
+            node->key = new SRKey(*(replacementNode->key));
+            RemoveKeyFromTreeAux(replacementNode);
+        }
+    }
+    updateR(node);
+    updateSum(node);
 }
 
 SRNode* ServersTree::AddToTreeAux(SRNode* nodeToAdd, SRNode* currentNode) {
-	bool lt = cmp(*nodeToAdd->key, *currentNode->key);
-	bool gt = cmp(*currentNode->key, *nodeToAdd->key);
+    bool lt = cmp(*nodeToAdd->key, *currentNode->key);
+    bool gt = cmp(*currentNode->key, *nodeToAdd->key);
 
-	if ((lt && !currentNode->left) || (gt && !currentNode->right)) {
-		if (lt) {
+    if ((lt && !currentNode->left) || (gt && !currentNode->right)) {
+        if (lt) {
             currentNode->left = nodeToAdd;
         }
-		else if (gt) {
+        else if (gt) {
             currentNode->right = nodeToAdd;
         }
-		nodeToAdd->parent = currentNode;
-		treeSize++;
-		updateR(nodeToAdd);
-		updateSum(nodeToAdd);
+        nodeToAdd->parent = currentNode;
+        treeSize++;
+        updateR(nodeToAdd);
+        updateSum(nodeToAdd);
         updateR(currentNode);
         updateSum(currentNode);
-		return nodeToAdd;
-	}
-	SRNode* ret = AddToTreeAux(nodeToAdd, lt ? currentNode->left : currentNode->right);
+        return nodeToAdd;
+    }
+    SRNode* ret = AddToTreeAux(nodeToAdd, lt ? currentNode->left : currentNode->right);
     updateR(currentNode);
     updateSum(currentNode);
     return ret;
@@ -404,59 +406,59 @@ SRNode* ServersTree::AddToTreeAux(SRNode* nodeToAdd, SRNode* currentNode) {
 
 
 void ServersTree::ToKeyListAux(List<SRKey>& list, SRNode* currentNode) {
-	if (currentNode == nullptr) {
+    if (currentNode == nullptr) {
         return;
     }
-	ToKeyListAux(list, currentNode->left);
-	list.PushBack(*currentNode->key);
-	ToKeyListAux(list, currentNode->right);
+    ToKeyListAux(list, currentNode->left);
+    list.PushBack(*currentNode->key);
+    ToKeyListAux(list, currentNode->right);
 }
 
 void ServersTree::Balance(SRNode* currentNode, bool balanceInsert) {
-	if (currentNode == nullptr) {
+    if (currentNode == nullptr) {
         return;
     }
-	int initialHeight = currentNode->height;
-	SRNode* initialCurrentParent = currentNode->parent;
-	currentNode->Update();
-	if (std::abs(currentNode->bf) > 1) {
-		if (currentNode->bf < -1) {
-			// rl or rr
-			if (currentNode->right->bf <= 0) {
-				RollRR(currentNode);
-			} else {
-				RollRL(currentNode);
-			}
-		} else if (currentNode->bf > 1) {
-			// ll or lr
-			if (currentNode->left->bf == -1) {
-				RollLR(currentNode);
-			} else {
-				RollLL(currentNode);
-			}
-		}
-	}
-	if (currentNode->height == initialHeight && balanceInsert) {
+    int initialHeight = currentNode->height;
+    SRNode* initialCurrentParent = currentNode->parent;
+    currentNode->Update();
+    if (std::abs(currentNode->bf) > 1) {
+        if (currentNode->bf < -1) {
+            // rl or rr
+            if (currentNode->right->bf <= 0) {
+                RollRR(currentNode);
+            } else {
+                RollRL(currentNode);
+            }
+        } else if (currentNode->bf > 1) {
+            // ll or lr
+            if (currentNode->left->bf == -1) {
+                RollLR(currentNode);
+            } else {
+                RollLL(currentNode);
+            }
+        }
+    }
+    if (currentNode->height == initialHeight && balanceInsert) {
         return;
     }
-	if (initialCurrentParent == nullptr) {
+    if (initialCurrentParent == nullptr) {
         return;
     }
-	Balance(initialCurrentParent);
+    Balance(initialCurrentParent);
     updateR(currentNode);
     updateSum(currentNode);
 }
 
 
 void ServersTree::Destroy(SRNode* currentNode) {
-	if (currentNode == nullptr) {
-	    return;
-	}
-	SRNode* leftNode = currentNode->left;
+    if (currentNode == nullptr) {
+        return;
+    }
+    SRNode* leftNode = currentNode->left;
     SRNode* rightNode = currentNode->right;
-	Destroy(leftNode);
-	delete currentNode;
-	Destroy(rightNode);
+    Destroy(leftNode);
+    delete currentNode;
+    Destroy(rightNode);
 }
 
 
@@ -464,61 +466,61 @@ ServersTree::ServersTree() : treeRoot(NULL), treeSize(0) {}
 
 
 bool ServersTree::IsEmpty() {
-	return treeSize == 0;
+    return treeSize == 0;
 }
 
 
 int ServersTree::GetSize() {
-	return treeSize;
+    return treeSize;
 }
 
 
 bool ServersTree::IsInTree(const SRKey keyToCheck) {
-	if (!treeRoot)
-		return false;
-	return GetNode(keyToCheck, treeRoot) != NULL;
+    if (!treeRoot)
+        return false;
+    return GetNode(keyToCheck, treeRoot) != NULL;
 }
 
 
 void ServersTree::AddToTree(SRKey const &keyToAdd) {
-	if (IsInTree(keyToAdd))
-		throw Tree::KeyExists(); // throw if AVLTreeIsInTree key
-	// allocate new node
-	SRKey* newKey;
-	SRNode* newNode;
-	newKey = new SRKey(keyToAdd);
-	newNode = new SRNode(newKey);
-	if (!treeRoot) {
-		treeRoot = newNode;
-		treeSize++;
-		updateR(treeRoot);
+    if (IsInTree(keyToAdd))
+        throw Tree::KeyExists(); // throw if AVLTreeIsInTree key
+    // allocate new node
+    SRKey* newKey;
+    SRNode* newNode;
+    newKey = new SRKey(keyToAdd);
+    newNode = new SRNode(newKey);
+    if (!treeRoot) {
+        treeRoot = newNode;
+        treeSize++;
+        updateR(treeRoot);
         updateSum(treeRoot);
         return;
-	}
-	newNode = AddToTreeAux(newNode, treeRoot);
-	if (!newNode->parent)
-		return;
-	Balance(newNode->parent);
+    }
+    newNode = AddToTreeAux(newNode, treeRoot);
+    if (!newNode->parent)
+        return;
+    Balance(newNode->parent);
 }
 
 
 void ServersTree::RemoveKeyFromTree(SRKey const& keyToAdd) {
-	SRNode* node = GetNode(keyToAdd, treeRoot);
-	if (node == nullptr) {
+    SRNode* node = GetNode(keyToAdd, treeRoot);
+    if (node == nullptr) {
         throw Tree::KeyNotExists();
     }
-	RemoveKeyFromTreeAux(node);
-	treeSize--;
+    RemoveKeyFromTreeAux(node);
+    treeSize--;
 }
 
 
 List<SRKey> ServersTree::GetKeyList() {
-	List<SRKey> list;
-	ToKeyListAux(list, treeRoot);
-	return list;
+    List<SRKey> list;
+    ToKeyListAux(list, treeRoot);
+    return list;
 }
 
 ServersTree::~ServersTree() {
-	Destroy(treeRoot);
+    Destroy(treeRoot);
 }
 #endif

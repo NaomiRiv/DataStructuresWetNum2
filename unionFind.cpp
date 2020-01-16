@@ -41,6 +41,25 @@ public:
     /* Finds the data which corresponds with the index and returns it */
     ServersTree GetData(int index);
 
+    void UpdateData(int dataCenterID, int serverID, int newTraffic, int oldTraffic = -1) {
+        UFNode* set = nodeArray[TO_INDEX(Find(dataCenterID))];
+        ServersTree* tree = dataArray[TO_INDEX(set->i)];
+        if (oldTraffic != -1) {
+            tree->RemoveKeyFromTree({oldTraffic, serverID});
+            tree->AddToTree({newTraffic, serverID});
+        } else {
+            tree->AddToTree({newTraffic, serverID});
+        }
+    }
+
+    void RemoveData(int dataCenterID, int serverID, int traffic) {
+        UFNode* set = nodeArray[TO_INDEX(Find(dataCenterID))];
+        ServersTree* tree = dataArray[TO_INDEX(set->i)];
+        if (tree->IsInTree({traffic, serverID})) {
+            tree->RemoveKeyFromTree({traffic, serverID});
+        }
+    }
+
     static List<SRKey>* merge(ServersTree* lhsTree, ServersTree* rhsTree) {
         List<SRKey> lhsKeys = lhsTree->GetKeyList();
         List<SRKey> rhsKeys = lhsTree->GetKeyList();

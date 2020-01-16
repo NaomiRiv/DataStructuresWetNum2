@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/DS2.dir/mainTests.cpp.o  -o DS2 
+/usr/bin/c++  -g   CMakeFiles/DS2.dir/main.cpp.o CMakeFiles/DS2.dir/library.cpp.o  -o DS2 
